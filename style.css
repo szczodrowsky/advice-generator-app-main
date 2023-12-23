@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 7.5rem 1rem 12.5rem 1rem;
+  gap: 1rem;
+  background: var(--Dark-Blue, #202733);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  background: var(--Dark-Grayish-Blue, #313a48);
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 1.5rem 5rem 1.5rem;
+  gap: 2rem;
+  position: relative;
+  max-width: 21.4375rem;
+}
+@media (min-width: 610px) {
+  .container {
+    max-width: 33.75rem;
+    padding: 4rem;
+  }
+}
+
+.tittle {
+  color: var(--Neon-Green, #53ffaa);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.21606rem;
+}
+
+.paragraf {
+  max-width: 18.4375rem;
+  color: var(--Light-Cyan, #cee3e9);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.01606rem;
+}
+@media (min-width: 610px) {
+  .paragraf {
+    max-width: 27.75rem;
+  }
+}
+.button {
+  border: none;
+  background-color: hsla(150, 100%, 66%, 1);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 95%;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--Neon-Green, #53ffaa);
+  box-shadow: 0px 0px 40px 0px #53ffaa;
+}
